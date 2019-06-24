@@ -39,6 +39,7 @@ function draw() {
 }
 
 function drawSet(responseJson) {
+  console.log(responseJson);
   let { colors } = responseJson;
   colors.forEach(function(point) {
     drawPoint(ctx, point);
